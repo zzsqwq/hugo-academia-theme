@@ -4,9 +4,9 @@
             <div class="navicon"></div>
         </button>
         <ul class="nav_items">
-            {{range $key, $value := .Site.Params.menu}}
+            {{range sort .Site.Params.menu "weight" }}
                 <li class="nav_item">
-                    <a class="nav-page" href="{{$value}}">{{$key}}</a>
+                    <a class="nav-page" href="{{.url}}">{{title .name}}</a>
                 </li>
             {{end}}
         </ul>
