@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+{{ partial "head" .}}
+<body>
+    <header id="page_header">
+        {{partial "header" .}}
+    </header>
+
+    <main id="page_main">
+        {{partial "side-bar" .}}
+        {{block "content" .}}{{end}}
+    </main>
+
+    {{partial "mobile-nav" .}}
+    <footer id="page_footer">
+        {{partial "footer" .}}
+    </footer>
+
+    {{range .Site.Params.CDN_USE.js}}
+        <script src="{{.}}"></script>
+    {{end}}
+</body>
+</html>

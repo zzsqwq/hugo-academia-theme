@@ -1,0 +1,225 @@
+.page pre,
+.page .highlight {
+    overflow: auto;
+    margin: 0 0 1rem;
+    padding: 0;
+    background: #f8f8f8;
+    color: #525252;
+    font-size: 1.6rem;
+    clear: both;
+}
+figure.highlight {
+    position: relative;
+}
+.page .highlight code {
+    padding: 0.2rem 0.3rem;
+    word-wrap: break-word;
+    font-size: 1.6rem !important;
+}
+.page pre {
+    padding: 10px 20px;
+}
+.page pre code {
+    padding: 0;
+    background: none;
+    color: #525252;
+    text-shadow: none;
+}
+.page .highlight {
+    position: relative;
+    border-radius: 1px;
+}
+.page .highlight pre {
+    margin: 0;
+    padding: 8px 0;
+    border: none;
+}
+.page .highlight .line::selection {
+    background: rgba(128,203,196,0.251);
+    color: #525252;
+}
+.page .highlight .line.marked {
+    background-color: rgba(128,203,196,0.251);
+}
+.page .highlight table {
+    position: relative;
+    margin: 0;
+    width: auto;
+    border: none;
+}
+.page .highlight td {
+    padding: 0;
+    border: none;
+}
+.page .highlight .gutter pre {
+    padding-right: 0.8rem;
+    padding-left: 0.7rem;
+    background-color: #f8f8f8;
+    color: #cfd8dc;
+    text-align: right;
+}
+.page .highlight .code pre {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    width: 100%;
+    background-color: #f8f8f8;
+}
+.page .highlight .line {
+    height: 1rem;
+}
+.page .gutter {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+.page .gist table {
+    width: auto;
+}
+.page .gist table td {
+    border: none;
+}
+.page pre .deletion {
+    background: #fdd;
+}
+.page pre .addition {
+    background: #dfd;
+}
+.page pre .meta {
+    color: #7c4dff;
+}
+.page pre .comment {
+    color: rgba(144,164,174,0.565);
+}
+.page pre .comment::selection {
+    background: rgba(128,203,196,0.251);
+    color: #525252;
+}
+.page pre .variable,
+.page pre .attribute,
+.page pre .regexp,
+.page pre .ruby .constant,
+.page pre .xml .tag .title,
+.page pre .xml .pi,
+.page pre .xml .doctype,
+.page pre .html .doctype,
+.page pre .css .id,
+.page pre .tag .name,
+.page pre .css .class,
+.page pre .css .pseudo {
+    color: #e53935;
+}
+.page pre .variable::selection,
+.page pre .attribute::selection,
+.page pre .regexp::selection,
+.page pre .ruby .constant::selection,
+.page pre .xml .tag .title::selection,
+.page pre .xml .pi::selection,
+.page pre .xml .doctype::selection,
+.page pre .html .doctype::selection,
+.page pre .css .id::selection,
+.page pre .tag .name::selection,
+.page pre .css .class::selection,
+.page pre .css .pseudo::selection {
+    background: rgba(128,203,196,0.251);
+    color: #525252;
+}
+.page pre .tag {
+    color: #c62641;
+}
+.page pre .tag::selection {
+    background: rgba(128,203,196,0.251);
+    color: #525252;
+}
+.page pre .number,
+.page pre .preprocessor,
+.page pre .literal,
+.page pre .params,
+.page pre .constant,
+.page pre .command {
+    color: #f76d47;
+}
+.page pre .number::selection,
+.page pre .preprocessor::selection,
+.page pre .literal::selection,
+.page pre .params::selection,
+.page pre .constant::selection,
+.page pre .command::selection {
+    background: rgba(128,203,196,0.251);
+    color: #525252;
+}
+.page pre .built_in {
+    color: #ffb62c;
+}
+.page pre .built_in::selection {
+    background: rgba(128,203,196,0.251);
+    color: #525252;
+}
+.page pre .ruby .class .title,
+.page pre .css .rules .attribute,
+.page pre .string,
+.page pre .value,
+.page pre .inheritance,
+.page pre .header,
+.page pre .ruby .symbol,
+.page pre .xml .cdata,
+.page pre .special,
+.page pre .number,
+.page pre .formula {
+    color: #0086b3;
+}
+.page pre .ruby .class .title::selection,
+.page pre .css .rules .attribute::selection,
+.page pre .string::selection,
+.page pre .value::selection,
+.page pre .inheritance::selection,
+.page pre .header::selection,
+.page pre .ruby .symbol::selection,
+.page pre .xml .cdata::selection,
+.page pre .special::selection,
+.page pre .number::selection,
+.page pre .formula::selection {
+    background: rgba(128,203,196,0.251);
+    color: #525252;
+}
+.page pre .keyword,
+.page pre .title,
+.page pre .css .hexcolor {
+    color: #c62641;
+}
+.page pre .keyword::selection,
+.page pre .title::selection,
+.page pre .css .hexcolor::selection {
+    background: rgba(128,203,196,0.251);
+    color: #525252;
+}
+.page pre .function,
+.page pre .python .decorator,
+.page pre .python .title,
+.page pre .ruby .function .title,
+.page pre .ruby .title .keyword,
+.page pre .perl .sub,
+.page pre .javascript .title,
+.page pre .coffeescript .title {
+    color: #6182b8;
+}
+.page pre .function::selection,
+.page pre .python .decorator::selection,
+.page pre .python .title::selection,
+.page pre .ruby .function .title::selection,
+.page pre .ruby .title .keyword::selection,
+.page pre .perl .sub::selection,
+.page pre .javascript .title::selection,
+.page pre .coffeescript .title::selection {
+    background: rgba(128,203,196,0.251);
+    color: #525252;
+}
+.page pre .tag .attr,
+.page pre .javascript .function {
+    color: #7c4dff;
+}
+.page pre .tag .attr::selection,
+.page pre .javascript .function::selection {
+    background: rgba(128,203,196,0.251);
+    color: #525252;
+}

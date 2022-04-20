@@ -1,0 +1,46 @@
+<div class="side-card sticky">
+    <div class="card-wrap" itemscope="itemscope" itemtype="http://schema.org/Person">
+        <div class="author-avatar">
+            <img class="avatar-img" src="{{.Site.Params.avatar}}" alt="avatar"/>
+        </div>
+        <div class="author-discrip">
+            <h3>{{.Site.Params.author}}</h3>
+            <p class="author-bio">{{.Site.Params.author_bio}}</p>
+        </div>
+        <div class="author-links">
+            <button class="btn m-social-links">Links</button>
+            {{with .Site.Params.social.enable }}
+<!--            todo: add if-->
+                <ul class="social-icons">
+                    {{range $icon, $url := $.Site.Params.social_links}}
+<!--                    {{$url}} : {{$icon}}-->
+                        <li>
+                            <a class="social-icon" href="{{$url}}" target="_blank"></a>
+                            <i class="{{$icon}}" aria-hidden="true"></i>
+                        </li>
+                    {{end}}
+                </ul>
+            {{end}}
+            {{with .Site.Params.e_social.enable }}
+                <ul class="social-icons">
+                    {{range $value, $name := $.Site.Params.e_social_links}}
+                        <li>
+                            <a class="e-social-link" href="#" target="_blank" >
+                                <i class="{{$name}}" aria-hidden="true"></i>
+                                <span>{{$value}}</span>
+                            </a>
+                        </li>
+                    {{end}}
+                </ul>
+            {{end}}
+            {{with .Site.Params.cv_dl.enable}}
+                <a class="cv-links" href="{{$.Site.Params.cv_dl.dir}}"  target="_blank">
+                    <i class="fas fa-file-pdf" aria-hidden="true">
+                        <span>{{$.Site.Params.cv_dl.description}}</span>
+                    </i>
+                </a>
+            {{end}}
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,15 @@
+<div class="nav-wrap">
+    <div class="nav">
+        <button class="site-nav">
+            <div class="navicon"></div>
+        </button>
+        <ul class="nav_items">
+            {{range $key, $value := .Site.Params.menu}}
+                <li class="nav_item">
+                    <a class="nav-page" href="{{$value}}">{{$key}}</a>
+                </li>
+            {{end}}
+        </ul>
+    </div>
+    <div class="cd-top"><i class="fa fa-arrow-up" aria-hidden="true"></i></div>
+</div>

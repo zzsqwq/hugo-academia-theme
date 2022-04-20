@@ -1,0 +1,7 @@
+{{define "content"}}
+<div class="page" itemscope="itemscope" itemtype="http://schema.org/CreativeWork">
+    {{range .Site.Pages }}
+        <a href="{{.Permalink}}">{{.Content}}</a>
+    {{end}}
+</div>
+{{end}}
