@@ -5,6 +5,6 @@
     <title>{{ .Title }} </title>
     <meta name="author" content="{{ .Site.Params.author }}">
     {{ range .Site.Params.CDN_USE.css }}
-        <link rel="stylesheet" href="{{.}}">
+        <link rel="stylesheet" href="{{ . }}">
     {{end}}
 </head>
