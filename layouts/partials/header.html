@@ -7,7 +7,11 @@
     <ul class="menus_items">
         {{range sort .Site.Params.menu "weight" }}
             <li class="menus_item">
+                {{if in .url "#"}}
+                <a class="site-page" href="{{lower .url | safeURL}}">{{ title .name}}</a>
+                {{else}}
                 <a class="site-page" href="{{.url | safeURL}}">{{ title .name}}</a>
+                {{end}}
             </li>
         {{end}}
     </ul>
