@@ -6,8 +6,8 @@
     </button>
     <ul class="menus_items">
         {{range sort .Site.Params.menu "weight" }}
-            <li class="menus_items">
-                <a class="site-page" href="{{.url | safeURL}}">{{title .name}}</a>
+            <li class="menus_item">
+                <a class="site-page" href="{{.url | safeURL}}">{{ title .name}}</a>
             </li>
         {{end}}
     </ul>

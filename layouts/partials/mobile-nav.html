@@ -6,7 +6,7 @@
         <ul class="nav_items">
             {{range sort .Site.Params.menu "weight" }}
                 <li class="nav_item">
-                    <a class="nav-page" href="{{.url}}">{{title .name}}</a>
+                    <a class="nav-page" href="{{.url}}">{{ title .name}}</a>
                 </li>
             {{end}}
         </ul>
