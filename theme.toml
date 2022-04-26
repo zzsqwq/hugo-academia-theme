@@ -1,0 +1,23 @@
+name = "Hugo Academia Theme"
+license = "MIT"
+licenselink = "https://github.com/zzsqwq/hugo-academia-theme/blob/master/LICENSE"
+description = " 基于 hexo 于 jekyll 版本的 academic-pages 进行移植，轻量、简单、易用。"
+homepage = "https://github.com/zzsqwq/hugo-academia-theme"
+tags = ["academia"]
+features = ["Menu"]
+min_version = "0.30"
+
+[author]
+  name = "Shuo Zhan"
+  homepage = "https://zzsqwq.cn"
+
+[originauthor]
+  name = "staeiou"
+  homepage = "https://github.com/staeiou"
+
+
+# If porting an existing theme
+[original]
+  name = "academicpages.github.io"
+  homepage = "https://academicpages.github.io/"
+  repo = "https://github.com/academicpages/academicpages.github.io"

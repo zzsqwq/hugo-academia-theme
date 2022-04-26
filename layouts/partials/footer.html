@@ -1,10 +1,11 @@
 <div class="footer_wrap">
     {{with .Site.Params.since}}
-        {{if not (eq $.Site.Params.since $.Date.Year) }}
-            <div class="copyright"> {{$.Site.Params.since}}-{{$.Date.Year}} by {{$.Site.Params.author}}</div>
-        {{else}}
-            <div class="copyright"> {{$.Date.Year}} by ${{.Site.Params.author}}</div>
-        {{end}}
+            <div class="copyright"> 
+                {{ if (and $.Site.Params.since (lt $.Site.Params.since now.Year)) }}
+                    {{ $.Site.Params.since }} -
+                {{ end }}
+                {{ now.Year }}
+            </div>
     {{end}}
     <div class="theme-info">
         Powered by <a href="https://gohugo.io/" rel="nofollow">Hugo</a> & <a href="https://github.com/zzsqwq/Hugo-Academia-Theme" rel="nofollow">Hugo Academia Theme</a>
