@@ -8,9 +8,10 @@
         {{range sort .Site.Params.menu "weight" }}
             <li class="menus_item">
                 {{if in .url "#"}}
-                <a class="site-page" href="{{lower .url | safeURL}}">{{ title .name}}</a>
+                {{ $new_url := replace .url " " "-"}}
+                <a class="site-page" href="{{lower $new_url | safeURL}}">{{ title .name}}</a>
                 {{else}}
-                <a class="site-page" href="{{.url | safeURL}}">{{ title .name}}</a>
+                    <a class="site-page" href="{{lower .url | safeURL}}">{{ title .name}}</a>
                 {{end}}
             </li>
         {{end}}

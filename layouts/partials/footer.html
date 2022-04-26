@@ -1,10 +1,12 @@
 <div class="footer_wrap">
     {{with .Site.Params.since}}
             <div class="copyright"> 
+                ©
                 {{ if (and $.Site.Params.since (lt $.Site.Params.since now.Year)) }}
                     {{ $.Site.Params.since }} -
                 {{ end }}
                 {{ now.Year }}
+                by {{ $.Site.Params.author }}
             </div>
     {{end}}
     <div class="theme-info">
