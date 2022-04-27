@@ -62,28 +62,28 @@ $(function () {
     });
 
     // pjax
-    $(document).pjax('a[target!=_blank]','.page', {
-        fragment: '.page',
-        timeout: 5000
-    });
-    $(document).on({
-        'pjax:click': function() {
-            $('body,html').animate({
-                scrollTop: 0,
-            }, 700);
-        },
-        'pjax:end': function() {
-            if ($(".header_wrap").hasClass("menus-open")) {
-                $(".header_wrap").removeClass("menus-open").addClass("menus-close")
-            }
-            if ($(".author-links").hasClass("is-open")) {
-                $(".author-links").removeClass("is-open").addClass("is-close")
-            }
-            if ($(".nav").hasClass("nav-open")) {
-                $(".nav").removeClass("nav-open").addClass("nav-close")
-            }
-        }
-    });
+    // $(document).pjax('a[target!=_blank]','.page', {
+    //     fragment: '.page',
+    //     timeout: 5000
+    // });
+    // $(document).on({
+    //     'pjax:click': function() {
+    //         $('body,html').animate({
+    //             scrollTop: 0,
+    //         }, 700);
+    //     },
+    //     'pjax:end': function() {
+    //         if ($(".header_wrap").hasClass("menus-open")) {
+    //             $(".header_wrap").removeClass("menus-open").addClass("menus-close")
+    //         }
+    //         if ($(".author-links").hasClass("is-open")) {
+    //             $(".author-links").removeClass("is-open").addClass("is-close")
+    //         }
+    //         if ($(".nav").hasClass("nav-open")) {
+    //             $(".nav").removeClass("nav-open").addClass("nav-close")
+    //         }
+    //     }
+    // });
 
     // smooth scroll
     $(function () {

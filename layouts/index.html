@@ -1,7 +1,7 @@
 {{define "content"}}
 <div class="page" itemscope itemtype="http://schema.org/CreativeWork">
     {{range .Site.Pages }}
-    {{if .Params.homepage }}
+    {{if and .Params.homepage}}
         {{partial "page" .}}
     {{end}}
     {{end}}
