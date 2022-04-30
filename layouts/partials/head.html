@@ -8,4 +8,7 @@
     {{ range .Site.Params.CDN_USE.css }}
         <link rel="stylesheet" href="{{ . }}">
     {{end}}
+    {{with .Site.Params.box_shadow.enable}} 
+        <link rel="stylesheet" href="/css/box_shadow.css">
+    {{end}}
 </head>

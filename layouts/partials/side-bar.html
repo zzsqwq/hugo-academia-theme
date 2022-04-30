@@ -1,7 +1,11 @@
 <div class="side-card sticky">
     <div class="card-wrap" itemscope itemtype="http://schema.org/Person">
         <div class="author-avatar">
+            {{if .Site.Params.avatar}}
             <img class="avatar-img" src="{{.Site.Params.avatar}}" alt="avatar"/>
+            {{else}}
+            <img class="avatar-img" src="{{.Site.Params.loading_bg.flink}}" alt="avatar"/>
+            {{end}}
         </div>
         <div class="author-discrip">
             <h3>{{.Site.Params.author}}</h3>
@@ -12,22 +16,22 @@
             {{with .Site.Params.social.enable }}
 <!--            todo: add if-->
                 <ul class="social-icons">
-                    {{range $icon, $url := $.Site.Params.social_links}}
-<!--                    {{$url}} : {{$icon}}-->
+                    {{range $name, $value :=  sort $.Site.Params.social.links "weight"}}
                         <li>
-                            <a class="social-icon" href="{{$url}}" target="_blank"></a>
-                            <i class="{{$icon}}" aria-hidden="true"></i>
+                            <a class="social-icon" href="{{.url}}" target="_blank">
+                            <i class="{{.icon}}" aria-hidden="true"></i>
+                            </a>
                         </li>
                     {{end}}
                 </ul>
             {{end}}
             {{with .Site.Params.e_social.enable }}
                 <ul class="social-icons">
-                    {{range $value, $name := $.Site.Params.e_social_links}}
+                    {{range $name, $value := sort $.Site.Params.e_social.links "weight"}}
                         <li>
-                            <a class="e-social-link" href="#" target="_blank" >
-                                <i class="{{$name}}" aria-hidden="true"></i>
-                                <span>{{$value}}</span>
+                            <a class="e-social-link" href="{{.url}}" target="_blank" >
+                                <i class="{{.icon}}" aria-hidden="true"></i>
+                                <span>{{.name}}</span>
                             </a>
                         </li>
                     {{end}}

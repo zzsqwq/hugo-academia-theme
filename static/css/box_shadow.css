@@ -1,0 +1,12 @@
+@media (min-width: 34em) {
+    .page {
+
+        -webkit-box-shadow: 0 4px 8px 6px rgba(7,17,27,0.06);
+        box-shadow: 0 4px 8px 6px rgba(7,17,27,0.06);
+    }
+
+    .side-card {
+        -webkit-box-shadow: 0 4px 8px 6px rgba(7,17,27,0.06);
+        box-shadow: 0 4px 8px 6px rgba(7,17,27,0.06);
+    }
+}
