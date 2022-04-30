@@ -42,3 +42,18 @@ $ git clone https://github.com/zzsqwq/hugo-academia-theme.git themes/hugo-academ
 
 
 **Ps:** 你也可以 Fork 或者直接克隆演示站点源代码 [academic-pages-demo](https://github.com/zzsqwq/academic-pages-demo) 然后基于此配置。
+
+## 配置主页内容
+
+当一个 Markdown 文件的 Front-matter `homepage` 参数为 true，这个文件的内容将会被展示在主页。
+
+你可以在这里查看[实例文件](https://github.com/zzsqwq/academic-pages-demo/blob/master/content/en/a.md)。
+
+```shell
+---
+title: "{{ replace .Name "-" " " | title }}"
+date: {{ .Date }}
+draft: true
+homepage: true
+---
+```

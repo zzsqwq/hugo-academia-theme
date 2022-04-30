@@ -42,3 +42,19 @@ $ git clone https://github.com/zzsqwq/hugo-academia-theme.git themes/hugo-academ
 5. Preview your site use `hugo server`. That's all, congratulations!
 
 **Ps:** You can also pull down or fork [academic-pages-demo](https://github.com/zzsqwq/academic-pages-demo) and configure it.
+
+
+
+## Index Homepage configure
+
+When a Markdown file Front-matter `homepage` parameter is true, this file will be displayed on the homepage.
+
+You can see an example file [here](https://github.com/zzsqwq/academic-pages-demo/blob/master/content/en/a.md).
+```shell
+---
+title: "{{ replace .Name "-" " " | title }}"
+date: {{ .Date }}
+draft: true
+homepage: true
+---
+```
