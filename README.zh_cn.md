@@ -1,4 +1,9 @@
-# Hugo-Academia-Theme
+# hugo-academia-theme
+<p align="center">
+<img src="https://img.shields.io/badge/hugo-academia-theme.svg" href="https://github.com/zzsqwq/hugo-academia-theme"> <img src="https://img.shields.io/badge/license-MIT-green.svg" href="https://github.com/zzsqwq/hugo-academia-theme/blob/master/LICENSE">
+</p>
+
+
 ![demo-en](static/images/demo-en.png)
 Hugo 版本的个人(学术)主页
 

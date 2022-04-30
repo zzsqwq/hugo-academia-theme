@@ -1,4 +1,9 @@
-# Hugo-Academia-Theme
+# hugo-academia-theme
+<p align="center">
+<img src="https://img.shields.io/badge/hugo-academia-theme.svg" href="https://github.com/zzsqwq/hugo-academia-theme"> <img src="https://img.shields.io/badge/license-MIT-green.svg" href="https://github.com/zzsqwq/hugo-academia-theme/blob/master/LICENSE">
+</p>
+
+
 ![demo-en](static/images/demo-en.png)
 Hugo version academic pages
 
@@ -8,6 +13,7 @@ Live demo is here : https://zzsqwq.github.io/zs-academic-pages/
 
 Demo repo is here : https://github.com/zzsqwq/zs-academic-pages
 
+中文文档在这里：[README.zh_cn.md](https://github.com/zzsqwq/hugo-academia-theme/blob/master/README.zh_cn.md)
 
 ## Features
 1. Multilingual support
