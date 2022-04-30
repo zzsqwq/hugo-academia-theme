@@ -9,9 +9,9 @@ Hugo version academic pages
 
 > based [Jekyll/academicpages](https://github.com/academicpages/academicpages.github.io) and [Hexo/hexo-theme-academia](https://github.com/PhosphorW/hexo-theme-academia).
 
-Live demo is here : https://zzsqwq.github.io/zs-academic-pages/
+Live demo is here : https://zzsqwq.github.io/academic-pages-demo/
 
-Demo repo is here : https://github.com/zzsqwq/zs-academic-pages
+Demo repo is here : https://github.com/zzsqwq/academic-pages-demo/
 
 中文文档在这里：[README.zh_cn.md](https://github.com/zzsqwq/hugo-academia-theme/blob/master/README.zh_cn.md)
 

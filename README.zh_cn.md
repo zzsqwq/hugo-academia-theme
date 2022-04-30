@@ -9,9 +9,9 @@ Hugo 版本的个人(学术)主页
 
 > 基于 [Jekyll/academicpages](https://github.com/academicpages/academicpages.github.io) 与 [Hexo/hexo-theme-academia](https://github.com/PhosphorW/hexo-theme-academia).
 
-演示站 : https://zzsqwq.github.io/zs-academic-pages/
+演示站 : https://zzsqwq.github.io/academic-pages-demo/
 
-演示站源代码 : https://github.com/zzsqwq/zs-academic-pages
+演示站源代码 : https://github.com/zzsqwq/academic-pages-demo/
 
 
 ## Features
