@@ -6,9 +6,25 @@
         <ul class="nav_items">
             {{range sort .Site.Params.menu "weight" }}
                 <li class="nav_item">
-                    <a class="nav-page" href="{{.url}}">{{ title .name}}</a>
+                {{if in .url "#"}}
+                {{ $new_url := replace .url " " "-"}}
+                    <a class="nav-page" href="{{ index (apply  (slice (lower $new_url)) (.Params.urlFunc | default "relLangURL") ".") 0 }}">{{ title .name}}</a>
+                {{else}}
+                    <a class="nav-page" href="{{ index (apply (slice .URL) (.Params.urlFunc | default "relLangURL") ".") 0 }}">{{ title .name}}</a>
+                {{end}}
                 </li>
             {{end}}
+            {{ if .Site.IsMultiLingual }}
+            {{ $node := . }}
+            {{ .Scratch.Set "separator" true }}
+            {{ range (default .Site.Home.AllTranslations .Translations) }}
+                {{ if ne $.Site.Language .Language }}
+                <li class="nav-page">
+                    <a href="{{ .Permalink }}">{{ .Language.LanguageName | emojify }}</a>
+                </li>
+                {{ end }}
+            {{ end }}
+            {{ end }}
         </ul>
     </div>
     <div class="cd-top"><i class="fa fa-arrow-up" aria-hidden="true"></i></div>

@@ -276,7 +276,7 @@ blockquote p {
 }
 @media (min-width: 34em) {
   .page {
-    width: 82.5%;
+    width: calc(98% - 165px);
     float: right;
     margin-right: 0;
     /* -webkit-box-shadow: 0 4px 8px 6px rgba(7,17,27,0.06); */
@@ -485,7 +485,7 @@ blockquote p {
 @media (min-width: 34em) {
   .side-card {
     width: 15.25424%;
-    min-width: 165px;
+    width: 165px;
     float: left;
     margin-right: 1.69492%;
     opacity: 0.75;
