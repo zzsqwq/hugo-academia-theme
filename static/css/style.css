@@ -314,7 +314,7 @@ blockquote p {
 }
 .author-avatar img {
   width: 100%;
-  max-width: 110px;
+  max-width: 200px;
   border-radius: 50%;
 }
 .author-discrip {
@@ -524,7 +524,7 @@ blockquote p {
     color: #000;
   }
   .author-discrip .author-bio {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     margin-top: 8px;
     margin-bottom: 10px;
   }
