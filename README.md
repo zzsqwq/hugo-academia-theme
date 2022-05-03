@@ -58,3 +58,11 @@ draft: true
 homepage: true
 ---
 ```
+
+## About parameter `canonifyURLs`
+
+If your `baseURL` is similar to `https://example.io/homepage`, you may need to turn this parameter on to use absolute paths.
+
+But if your `baseURL` is similar to `https://example.io/`, then it is not recommended that you turn on this parameter.
+
+For more information about this parameter, you can refer to [here](https://gohugo.io/content-management/urls/#canonicalization).

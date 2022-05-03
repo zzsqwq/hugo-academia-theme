@@ -57,3 +57,11 @@ draft: true
 homepage: true
 ---
 ```
+
+## 关于  `canonifyURLs` 参数
+
+如果你的 `baseURL` 类似于 `https://example.io/homepage`，你可能需要开启这个参数以使用绝对路径。
+
+但是如果你的 `baseURL` 类似与 `https://example.io/`，那不推荐你开启这个参数。
+
+关于这个参数更多的信息，可以参考 [这里](https://gohugo.io/content-management/urls/#canonicalization)。
