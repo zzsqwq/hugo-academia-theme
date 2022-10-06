@@ -4,3 +4,4 @@ exampleSite/public/
 exampleSite/resources/
 *.lock
 /.vscode
+**/.DS_Store

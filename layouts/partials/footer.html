@@ -9,6 +9,11 @@
                 by {{ $.Site.Params.author }}
             </div>
     {{end}}
+    {{with .Site.Params.icp}} 
+            <div class="copyright">
+                <a href="http://beian.miit.gov.cn/">{{$.Site.Params.icp}}</a>
+            </div>
+    {{end}}
     <div class="theme-info">
         Powered by <a href="https://gohugo.io/" rel="nofollow">Hugo</a> & <a href="https://github.com/zzsqwq/Hugo-Academia-Theme" rel="nofollow">Hugo Academia Theme</a>
     </div>
